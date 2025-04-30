@@ -1,0 +1,112 @@
+/* Override styles or add custom styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Additional custom styles for the chat app */
+.made-c-sidebar {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.made-c-sidebar__body {
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.made-c-sidebar__nav-item {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.made-c-sidebar__nav-item:hover {
+  background-color: var(--made-color-action-neutral-hover);
+}
+
+.made-c-sidebar__nav-item--active {
+  background-color: var(--made-color-action-neutral-hover);
+}
+
+.made-c-sidebar__nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--made-space-4);
+}
+
+.made-c-sidebar__nav-link-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Loading indicator */
+.made-c-loading-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.made-c-loading-indicator__dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  background-color: var(--made-color-text-secondary);
+  border-radius: 50%;
+  animation: dot-pulse 1.5s infinite ease-in-out;
+}
+
+.made-c-loading-indicator__dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.made-c-loading-indicator__dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dot-pulse {
+  0%,
+  100% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Custom avatar styles */
+.made-c-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.made-c-avatar--primary {
+  background-color: var(--made-color-primary);
+  color: white;
+}
+
+.made-c-avatar--secondary {
+  background-color: var(--made-color-secondary);
+  color: white;
+}
+
+.made-c-avatar--small {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+}
+
+/* Textarea auto-resize */
+.made-c-textarea--resize-none {
+  resize: none;
+}

@@ -1,0 +1,124 @@
+.made-c-form-element {
+  display: flex;
+  flex-direction: column;
+}
+.made-c-form-element__label {
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.made-c-form-element__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.made-c-form-element__legend {
+  font-family: MarkOffcForMC-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif,
+    Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+  line-height: 1.25;
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+}
+.made-c-form-element__label--error {
+  color: #141413;
+}
+.made-c-form-element__validation--error {
+  color: #e00;
+  font-size: 0.75rem;
+}
+.made-c-form-element__label--success {
+  color: #141413;
+}
+.made-c-form-element__validation--success {
+  color: #038a00;
+  font-size: 0.75rem;
+}
+.made-c-form-element__hint {
+  color: #555250;
+  font-size: 0.75rem;
+}
+.made-c-textarea__wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.made-c-textarea {
+  background-color: #fff;
+  border: 1px solid #555250;
+  border-radius: 4px;
+  color: #141413;
+  font-family: MarkOffcForMC, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  height: 100%;
+  margin-bottom: 0.5rem;
+  min-height: 2.5rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+.made-c-textarea__icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+}
+.made-c-textarea:focus {
+  border: 1px solid #cf4500;
+  box-shadow: 0 0 0 1px #cf4500;
+  outline: 0;
+}
+.made-c-textarea:disabled {
+  background-color: #b1ada6;
+  border: 1px solid #b1ada6;
+  opacity: 0.15;
+}
+.made-c-textarea[aria-disabled='true'] {
+  background-color: #b1ada6;
+  border: 1px solid #b1ada6;
+  opacity: 0.15;
+}
+.made-c-textarea--error {
+  border: 1px solid #e00;
+  padding-right: 2.5rem;
+}
+.made-c-textarea--success {
+  border: 1px solid #038a00;
+  padding-right: 2.5rem;
+}
+.made-c-sidebar {
+  background: #141413;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.made-c-sidebar--light {
+  background: #fff;
+  color: #141413;
+}
+.made-c-sidebar__header {
+  align-items: center;
+  display: flex;
+  min-height: 4rem;
+  padding: 0 1.5rem;
+}
+.made-c-sidebar__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.made-c-sidebar__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.made-c-sidebar__nav-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.made-c-sidebar__nav-item-icon {
+  margin-right: 0.75rem;
+}
